@@ -1,26 +1,35 @@
 #include <iostream>
 using namespace std;
 
+struct MyException{
+    const char* test() const throw(){
+        return "My ERROR";
+}
+};
+
 double division(double a, double b){
     if (a !=0 && b == 0) {
-        throw "Zero Division error"; }//Throw
+        throw "Zero Division error"; }
         else if (b == 3) {
-            throw "An error occured";
+            throw MyException();
         }
         else if (a == 0 && b == 0){
             throw 404;
         } return a/b;
 }    
 int main() {
-    try { //TRY
-        int num1 = 0, num2 = 0;
+    try {
+        int num1 = 0, num2 = 3;
         division (num1,num2);
     }
-    catch (const char* msg) { //CATCHHHHHHHHH
+    catch (const char* msg) {
         cout << msg << endl;
     }
     catch (int x){
         cout << x << endl;
+    }
+    catch (MyException & e){
+        cout << e.test() << endl;
     }
     return 0;
 }
