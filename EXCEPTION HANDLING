@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+double division(double a, double b){
+    if (a !=0 && b == 0) {
+        throw "Zero Division error"; }//Throw
+        else if (b == 3) {
+            throw "An error occured";
+        }
+        else if (a == 0 && b == 0){
+            throw 404;
+        } return a/b;
+}    
+int main() {
+    try { //TRY
+        int num1 = 0, num2 = 0;
+        division (num1,num2);
+    }
+    catch (const char* msg) { //CATCHHHHHHHHH
+        cout << msg << endl;
+    }
+    catch (int x){
+        cout << x << endl;
+    }
+    return 0;
+}
