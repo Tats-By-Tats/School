@@ -1,0 +1,28 @@
+using System;  
+namespace LOLOLOLOL{ //Just the name of the code
+    class program{
+        static void Main(string[] args){
+            string test = "  ";
+            Console.WriteLine("Hi"); //input a value for test
+            test = Console.ReadLine(); //output of a value for variable test
+            Console.WriteLine(test); //Variable types
+            Console.Write("Hello"); //Does not include new line
+            /*
+            int = stores integers without decimal
+            double = stores floating point numbers with decimal
+            char = stores single characters
+            string = stores text
+            bool = stores statement: true or false
+            */
+            // Use const if you want others to overwrite a data from a variable
+            
+            const int myNumber = 5; 
+            Console.WriteLine(myNumber); //Built in cmath on "System"
+            Console.WriteLine(Math.Sqrt(2));
+            Console.WriteLine(Math.Round(5.55555));
+            double total = (Math.Sqrt(2)) * (Math.Round(5.55555));
+            Console.WriteLine(total);
+            const bool text = true;
+        }
+    }
+}
