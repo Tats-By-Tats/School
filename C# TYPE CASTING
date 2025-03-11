@@ -1,0 +1,52 @@
+using System;  
+namespace LOLOLOLOL{ //Just the name of the code
+    class Program{ //TYPE CASTING
+    //Conversion of DATA TYPES
+        static int Main(string[] args) {
+            string text = " ";
+            int number = 0;
+            double number1 = 0;
+            bool boolean= true;
+            
+            text = Console.ReadLine();
+            if (text == "9") {
+                number = Convert.ToInt32(text); //"9" => 9
+                number += number; //Number  = number + number
+                Console.WriteLine(number);
+            }
+            else if (text == "9.9"){
+                number1 = Convert.ToDouble(text);
+                number1 /= 3; //number = number / 3
+                Console.WriteLine(number1);
+            }
+                else {
+                    Console.WriteLine(Convert.ToString(boolean));
+                }
+                return 0;
+        } 
+    }
+}
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+IF ELSE IF ELSE STATEMENTS
+using System;  
+namespace LOLOLOLOL{ //Just the name of the code
+    class Program{ //IF
+    //ELSE IF
+        static int Main(string[] args) {
+            string text = " ";
+            bool boolean= true;
+            
+            text = Console.ReadLine();
+            if (text == "Hello") {
+                Console.WriteLine("Hi!!!");
+            }
+            else if (text == "Hi"){
+                Console.WriteLine("Hello!");
+            }
+                else {
+                    Console.WriteLine("Bye");
+                }
+                return 0;
+        } 
+    }
+}
