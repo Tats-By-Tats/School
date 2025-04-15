@@ -1,0 +1,32 @@
+//Methods and function method overloading
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static int mycalc(int num3) // we include num3 as parameter
+    {
+      int num1 = 10, num2 = 20;
+      return num1 + num2 + num3;
+    }
+	static double Divide(double x, double y){
+    	return x/y;
+    }
+    //function overloading
+    static int mycalc(int num1,int num2,int num3) {
+    return num1+num2+num3;
+    }
+    static double mycalc(double num1, double num2){
+    double total = Divide(x: num1, y:num2);
+    return total;
+    }
+    
+    static void Main(string[] args)
+    {
+      Console.WriteLine(mycalc(num1:10.5, num2:8.0));
+      Console.WriteLine(mycalc(30));
+      Console.WriteLine(mycalc(num1:10, num2:8, num3:10));
+    }
+  }
+}
