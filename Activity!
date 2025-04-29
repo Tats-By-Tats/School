@@ -1,0 +1,30 @@
+using System;
+class Library
+{   
+    public string shelf_genre;
+    public Library(string genre) {
+        shelf_genre = genre;
+    }
+}
+class Shelf : Library
+{ 
+    string[] Books = {"Lord of the Mysteries", "Harry Potter", "Circle of Inevitability", };
+    string[] Authors = {"Cuttlefish that loves diving", "J.K Rowling","Cuttlefish that loves diving"};
+    public Shelf(string genre) : base(genre) {
+    }
+    public void Details() {
+            for (int i=0; i < 3; i++) {
+                Console.WriteLine(Authors[i]);
+                Console.WriteLine(Books[i]);
+        }
+    }
+}
+class Program
+{
+    static void Main()
+    {
+        Shelf Mystery = new Shelf("Mystery");
+        Console.WriteLine("Genre:" + Mystery.shelf_genre);
+        Mystery.Details();
+    } 
+}
