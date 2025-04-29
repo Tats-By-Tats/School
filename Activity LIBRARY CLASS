@@ -9,7 +9,7 @@ class Library
 class Shelf : Library
 { 
     string[] Books = {"Lord of the Mysteries", "Harry Potter", "Circle of Inevitability", };
-    string[] Authors = {"Cuttlefish that loves diving", "J.K Rowling","Cuttlefish that loves diving"};
+    string[] Authors = {"\nCuttlefish that loves diving", "\nJ.K Rowling","\nCuttlefish that loves diving"};
     public Shelf(string genre) : base(genre) {
     }
     public void Details() {
