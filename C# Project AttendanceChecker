@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{	
+		string letter;
+		int num;
+		var person1 =(Name: "Miranda",ID: 241146);
+		var person2 = (Name: "Flora",ID: 241145);
+		var person3 = (Name: "Tagle",ID: 251153);
+		var person4 = (Name: "Jansen", ID: 251155);
+		var person5 = (Name: "Keith", ID: 251156);
+		Console.Write("Enter a number: ");
+		num = Convert.ToInt32(Console.ReadLine());
+		string check;
+		switch (num) {
+		    case 241146: check = "Attendance marked as present... Good Day to you, " + person1.Name; break; 
+		    case 241145: check = "Attendance marked as present... Good Day to you, " + person2.Name; break;
+		    case 251153: check = "Attendance marked as present... Good Day to you, " + person3.Name; break;
+		    case 251155: check = "Attendance marked as present... Good Day to you, " + person4.Name; break;
+		    case 251156: check = "Attendance marked as present... Good Day to you, " + person5.Name; break;
+		    default: check = "Invalid Input";break;
+		}
+		Console.WriteLine(check);
+		}
+}
