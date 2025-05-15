@@ -1,0 +1,37 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // User input
+        Console.Write("How many strings would you like to enter? ");
+        int n = int.Parse(Console.ReadLine());
+        
+        // New instance for stringArray
+        string[] stringArray = new string[n];
+        
+        // Iterate through the array
+        for (int i = 0; i < n; i++)
+        {   
+            // User input for string at the current index.
+            Console.Write($"Enter string #{i + 1}: ");
+            stringArray[i] = Console.ReadLine();
+            
+            // Displays the current array elements. 
+            Console.WriteLine("\nCurrent array contents:");
+            for (int j = 0; j <= i; j++)
+            {
+                Console.WriteLine($"[{j}] {stringArray[j]}");
+            }
+            Console.WriteLine(); 
+        }
+
+        // Final output once iteration is done.
+        Console.WriteLine("Final array contents:");
+        foreach (string str in stringArray)
+        {
+            Console.WriteLine(str);
+        }
+    }
+}
