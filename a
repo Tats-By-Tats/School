@@ -1,0 +1,20 @@
+file management.py
+with open(file_path, "r", encoding="utf-8") as file:
+    print ("\nUPDATED FILE CONTENTS:")
+    print (file.read())
+
+    print ("===================================================================")
+    print ("LIST OF FILES AND FOLDERS")
+    for item in folder.iterdir():
+        if item.is_file():
+            print("FILE:", item.name)
+        elif item.is_dir():
+            print("FOLDER:", item.name)
+
+    print ("\nPYTHON FILES:")
+    for file_path in folder.glob("*.py"):
+           print(file_path.name)
+
+    print ("\nTEXT FILES:")
+    for file_path in folder.rglob("*.txt"):
+        print (file_path) 
